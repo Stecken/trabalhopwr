@@ -128,45 +128,87 @@ div.engloba-setabaixo > img {
 div.beneficios-section {
     display: flex;
     align-self: center;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     width: max-content;
+    height: 31rem;
     padding: 5rem 1rem;
+}
+
+div.engloba-text-beneficios {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    width: 26rem;
+    height: 100%;
+    border-radius: 0.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 div.engloba-titulo-section {
     display: flex;
-    width: max-content;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 0.5rem;
     padding: 0 1rem;
-
     background-color: #0a0e43d4;
 }
 
-span.titulo-section {
+.titulo-section {
     display: flex;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-family: 'Roboto Mono',
     monospace;
     color: white;
 }
 
 .highlight-title {
-    font-size: 2rem;
+    width: max-content;
+    font-size: 1.7rem;
     font-family: 'Roboto Mono',
     monospace;
     text-decoration: underline;
     color: white;
 }
 
+div.engloba-body-beneficios {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+
+    width: 100%;
+}
+
+div.engloba-body-beneficios > h4 {
+    font-family: 'Oxygen',
+    sans-serif;
+    font-size: 1.4rem;
+}
+
+div.engloba-body-beneficios > h5 {
+    padding-top: 1rem;
+    font-family: 'Oxygen',
+        sans-serif;
+    font-size: 1.1rem;
+}
+
+div.barra-vertical {
+    display: flex;
+    width: 0.5rem;
+    background-color: var(--background-blue);
+    height: 100%;
+}
+
 .engloba-beneficios {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 25rem;
+    padding: 0 1rem;
 
     justify-content: space-between;
-    padding-top: 1rem;
 }
 
 .beneficio-box {
@@ -181,9 +223,14 @@ span.titulo-section {
     height: 10rem;
 
     border-radius: 0.5rem;
+    margin-top: 1rem;
     transition: all .5s linear;
     background-color: var(--background);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.beneficio-box:nth-of-type(1), .beneficio-box:nth-of-type(2) {
+    margin-top: 0;
 }
 
 div.beneficio-box:hover {
