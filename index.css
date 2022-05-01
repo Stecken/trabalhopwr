@@ -1,0 +1,261 @@
+div.apresentacao-empresa {
+    background: linear-gradient(45deg, #528c45, #1a0f62 100%, #190e62);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.angle-block {
+    width: 100%;
+    border-top: 70px solid transparent;
+    border-right: 94vw solid var(--background);
+    background-color: transparent;
+    z-index: 2;
+}
+
+div.engloba-blocos-3d {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 30rem;
+    z-index: 0;
+}
+
+div.blocos-3d {
+    font-family: 'Oswald', sans-serif;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 0.7rem;
+    background-color: rgba(215, 215, 215, 0.319);
+    transform: perspective(400px) rotateY(-45deg) rotateX(60deg);
+    opacity: 0.4;
+}
+/**/
+
+div.header-main {
+    display: flex;
+
+    width: 100%;
+    height: 30rem;
+    padding-top: 6rem;
+    margin-bottom: 4rem;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo-chamativo {
+    font-size: 1.5rem;
+    font-family: 'Oxygen',
+    monospace;
+    letter-spacing: 5px;
+    color: white;
+}
+
+div.engloba-texto-chamativo {
+    display: flex;
+    width: 18rem;
+}
+
+.texto-chamativo {
+    color: white;
+    font-size: 2.6rem;
+}
+
+div.beneficios-section {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: max-content;
+    padding: 5rem 1rem;
+}
+
+div.engloba-titulo-section {
+    display: flex;
+    width: max-content;
+    padding: 0 1rem;
+
+    background-color: #060a378a;
+}
+
+span.titulo-section {
+    display: flex;
+    font-size: 1.5rem;
+    font-family: 'Roboto Mono',
+    monospace;
+    color: white;
+}
+
+.highlight-title {
+    font-size: 1.5rem;
+    font-family: 'Roboto Mono',
+    monospace;
+    text-decoration: underline;
+    color: white;
+}
+
+.engloba-beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.beneficio-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    width: 9rem;
+    height: 10rem;
+
+    border-radius: 0.5rem;
+    transition: all .5s linear;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+div.beneficio-box:hover {
+    transform: translateY(-0.6rem);
+}
+
+div.header-beneficio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 3rem;
+}
+
+div.header-beneficio > h3 {
+    height: max-content;
+
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.9rem;
+}
+
+div.header-beneficio > img {
+    max-width: 3rem;
+    height: auto;
+}
+
+.body-beneficio {
+    padding: 0 0.3rem;
+    padding-top: 0.5rem;
+    color: var(--text);
+    font-size: 1.2rem;
+    font-family: 'Oswald',
+    sans-serif;
+}
+
+.base-angle-block {
+    width: 100%;
+    background-color: transparent;
+    z-index: 2;
+}
+
+div.angle-block-new-section {
+    border-top: 70px solid transparent;
+    border-right: 94vw solid #0b1c43de;
+}
+
+div.clients-avaliable-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem 3rem;
+
+    background-color: #0b1c43de;
+}
+
+div.clients-avaliable-section > h2 {
+    font-size: 1.8rem;
+    background: white;
+    color: #0b1c43de;
+
+    padding: 0 1rem;
+}
+
+div.engloba-clients-comments {
+    display: flex;
+
+    flex-wrap: nowrap;
+    padding-top: 1.2rem;
+    width: 80vw;
+
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+div.engloba-clients-comments::-webkit-scrollbar {
+    display: none;
+}
+
+div.client-comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: white;
+    height: 20rem;
+    min-width: 80%;
+
+    margin: 1rem 1rem;
+
+    border-radius: 0.5rem;
+    box-shadow: rgba(50, 50, 50, 0.35) 0px 5px 15px;
+
+    padding: 1rem 2rem;
+}
+
+div.client-comment > img {
+    align-self: flex-start;
+
+    width: 4rem;
+    height: auto;
+}
+
+div.engloba-quote {
+    display: flex;
+
+    align-items: flex-start;
+}
+
+h3.quote {
+    font-size: 3rem;
+}
+
+h3.quote-text {
+    font-size: 1.5rem;
+}
+
+div.author {
+    font-family: 'Oswald',
+    sans-serif;
+    font-size: 1.3rem;
+}
+
+div.classification {
+    display: flex;
+}
+
+div.classification > img {
+    width: 1.4rem;
+    height: auto;
+}
