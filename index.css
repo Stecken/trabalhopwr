@@ -1,3 +1,7 @@
+/*
+    O CSS dessa página dá para otimizar e apagar algumas coisas, porém, não sei se vou utilizar novamente
+*/
+
 div.apresentacao-empresa {
     background: linear-gradient(45deg, #528c45, #1a0f62 100%, #190e62);
 }
@@ -9,11 +13,8 @@ main {
 }
 
 div.angle-block {
-    width: 100%;
     border-top: 70px solid transparent;
-    border-right: 94vw solid var(--background);
-    background-color: transparent;
-    z-index: 2;
+    border-right: 94vw solid #102145;;
 }
 
 div.engloba-blocos-3d {
@@ -125,6 +126,60 @@ div.engloba-setabaixo > img {
     font-size: 2.6rem;
 }
 
+div.angle-block-divide-section-sobre-bene {
+    border-top: 70px solid #102145;;
+    border-right: 94vw solid transparent;
+}
+
+div.sobre-section {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5rem 1rem;
+
+    width: 100%;
+    background-color: #102145;;
+}
+
+div.sobre-nos-text {
+    display: flex;
+    width: 18rem;
+    flex-direction: column;
+
+    margin-right: 2rem;
+}
+
+.sobre-nos-title {
+    color: white;
+    padding: 0.3rem 0.8rem;
+    width: max-content;
+    font-size: 1.4rem;
+    font-family: 'Roboto Mono',
+    monospace;
+
+    border-color: white;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-width: 2px;
+    background: transparent;
+}
+
+.sobre-nos-description {
+    font-family: 'Oxygen',
+    monospace;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    color: white;
+}
+
+div.engloba-img-sobre > img {
+    width: 20rem;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
 div.beneficios-section {
     display: flex;
     align-self: center;
@@ -153,13 +208,13 @@ div.engloba-titulo-section {
     flex-wrap: wrap;
     width: 100%;
     border-radius: 0.5rem;
-    padding: 0 1rem;
+    padding: 0.4rem 1rem;
     background-color: #0a0e43d4;
 }
 
 .titulo-section {
     display: flex;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-family: 'Roboto Mono',
     monospace;
     color: white;

@@ -5,6 +5,26 @@ footer {
     align-items: center;
     height: 8rem;
 
-    background: #09153d8f;
+    background: #03102ede;
     color: white;
+}
+
+.redes-sociais {
+    display: flex;
+}
+
+.redes-sociais > a {
+    padding: 0 0.6rem;
+}
+
+.redes-sociais > a > img {
+    width: 1.8rem;
+    height: auto;
+    
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.redes-sociais > a > img:hover {
+    opacity: 1;
 }
