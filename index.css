@@ -25,6 +25,17 @@ div.engloba-blocos-3d {
     z-index: 0;
 }
 
+div.estoque {
+    margin-top: 1rem;
+    margin-right: 2rem;
+    display: flex;
+}
+
+div.estoque > img {
+    width: auto;
+    height: 28rem;
+}
+
 div.blocos-3d {
     font-family: 'Oswald', sans-serif;
     padding: 2rem;
@@ -58,7 +69,55 @@ div.header-main {
 
 div.engloba-texto-chamativo {
     display: flex;
-    width: 18rem;
+    flex-direction: column;
+    width: 28rem;
+}
+
+a.botao-atencao {
+    display: flex;
+    width: max-content;
+    padding: 1rem 1.5rem;
+    
+    border-radius: 45px;
+    font-family: 'Oswald',
+    monospace;
+    font-weight: 800;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    background-color: white;
+    color:rgba(32, 83, 159, 0.876);
+    transition: background-color 0.5s;
+}
+
+a.botao-atencao:hover {
+    background-color: rgba(231, 231, 231, 0.876);
+}
+
+div.engloba-setabaixo {
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+
+    background-color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    animation: moveInY 3s infinite;
+    animation-direction: alternate;
+}
+
+div.engloba-setabaixo > img {
+    width: 1.3rem;
+    height: auto;
+}
+
+@keyframes moveInY {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
 }
 
 .texto-chamativo {
@@ -82,19 +141,19 @@ div.engloba-titulo-section {
     width: max-content;
     padding: 0 1rem;
 
-    background-color: #060a378a;
+    background-color: #0a0e43d4;
 }
 
 span.titulo-section {
     display: flex;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Roboto Mono',
     monospace;
     color: white;
 }
 
 .highlight-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Roboto Mono',
     monospace;
     text-decoration: underline;
@@ -118,16 +177,17 @@ span.titulo-section {
 
     text-align: center;
 
-    width: 9rem;
+    width: 11rem;
     height: 10rem;
 
     border-radius: 0.5rem;
     transition: all .5s linear;
+    background-color: var(--background);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 div.beneficio-box:hover {
-    transform: translateY(-0.6rem);
+    transform:scale(1.1);
 }
 
 div.header-beneficio {
@@ -143,19 +203,19 @@ div.header-beneficio > h3 {
     height: max-content;
 
     font-family: 'Oxygen', sans-serif;
-    font-size: 1.9rem;
+    font-size: 2.1rem;
 }
 
 div.header-beneficio > img {
-    max-width: 3rem;
+    max-width: 3.5rem;
     height: auto;
 }
 
 .body-beneficio {
-    padding: 0 0.3rem;
+    padding: 0 0.5rem;
     padding-top: 0.5rem;
     color: var(--text);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: 'Oswald',
     sans-serif;
 }
@@ -168,7 +228,7 @@ div.header-beneficio > img {
 
 div.angle-block-new-section {
     border-top: 70px solid transparent;
-    border-right: 94vw solid #0b1c43de;
+    border-right: 94vw solid var(--background-green);
 }
 
 div.clients-avaliable-section {
@@ -179,13 +239,13 @@ div.clients-avaliable-section {
 
     padding: 2rem 3rem;
 
-    background-color: #0b1c43de;
+    background-color: var(--background-green);
 }
 
 div.clients-avaliable-section > h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     background: white;
-    color: #0b1c43de;
+    color: var(--background-green);;
 
     padding: 0 1rem;
 }
